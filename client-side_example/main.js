@@ -7,5 +7,5 @@ var template = new EJS({
     </ul>
   `
 });
-var html = template.render({ the_list: ["one", "two", "three"] });
-document.getElementById('list-wrapper').innerHTML = html;
+
+document.getElementById('list-wrapper').innerHTML = template.render({ the_list: ["one", "two", "three"] });
